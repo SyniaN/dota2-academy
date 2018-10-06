@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import TopNav from "./components/TopNav";
-import FlashCardContainer from "./components/FlashCardContainer";
+import QuizContainer from "./components/QuizContainer";
 import Footer from "./components/Footer";
 import styled from "styled-components";
 
@@ -10,7 +10,7 @@ class App extends Component {
       <Wrapper>
         <TopNav />
         <ContentWrapper>
-          <FlashCardContainer />
+          <QuizContainer />
         </ContentWrapper>
         <Footer />
       </Wrapper>
