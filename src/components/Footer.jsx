@@ -1,0 +1,15 @@
+import React from "react";
+import styled from "styled-components";
+
+export default class Footer extends React.Component {
+  render() {
+    return <Wrapper>Footer</Wrapper>;
+  }
+}
+
+const Wrapper = styled.div`
+  bottom: 0;
+  height: 100px;
+  background-color: #1b1d1d;
+  border-top: solid #272a2a 3px;
+`;
