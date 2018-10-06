@@ -4,7 +4,16 @@ import styled from "styled-components";
 
 export default class FlashCardContainer extends React.Component {
   render() {
-    const chosenQuestion = "What is my age?";
+    const chosenQuestion = {
+      imgUrl: undefined,
+      text: "What is my name?"
+    };
+
+    const potentialAnswers = [
+      {
+        text: "43"
+      }
+    ];
 
     return (
       <Wrapper>
