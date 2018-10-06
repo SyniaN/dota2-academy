@@ -9,16 +9,26 @@ export default class FlashCardContainer extends React.Component {
       text: "What is my name?"
     };
 
-    const potentialAnswers = ["123", "456", "789"];
-
-    const correctAnswer = "789";
+    const potentialAnswers = [
+      {
+        text: "123",
+        isCorrect: undefined
+      },
+      {
+        text: "456",
+        isCorrect: true
+      },
+      {
+        text: "789",
+        isCorrect: false
+      }
+    ];
 
     return (
       <Wrapper>
         <FlashCard
           question={chosenQuestion}
           potentialAnswers={potentialAnswers}
-          correctAnswer={correctAnswer}
         />
       </Wrapper>
     );
