@@ -1,0 +1,40 @@
+[
+  {
+    "chosenQuestion": {
+      "text": "What is my name?"
+    },
+    "potentialAnswers": [
+      {
+        "text": "123",
+        "isCorrect": false
+      },
+      {
+        "text": "456",
+        "isCorrect": true
+      },
+      {
+        "text": "789",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "chosenQuestion": {
+      "text": "What is my age?"
+    },
+    "potentialAnswers": [
+      {
+        "text": "a",
+        "isCorrect": false
+      },
+      {
+        "text": "b",
+        "isCorrect": true
+      },
+      {
+        "text": "c",
+        "isCorrect": false
+      }
+    ]
+  }
+]
