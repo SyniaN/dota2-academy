@@ -25,7 +25,7 @@ export default class FlashCardContainer extends React.Component {
 
   onNextQuestionClick() {
     this.setState({ showAnswer: false });
-    this.props.nextQuestion();
+    this.props.onNextQuestionClick();
   }
 
   render() {

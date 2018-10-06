@@ -1,19 +1,76 @@
 [
   {
     "chosenQuestion": {
+      "text": "Which Hero knows Leech Seed?"
+    },
+    "potentialAnswers": [
+      {
+        "text": "Windranger",
+        "isCorrect": false
+      },
+      {
+        "text": "Nature's Prophet",
+        "isCorrect": false
+      },
+      {
+        "text": "Treant Protector",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "chosenQuestion": {
+      "text": "What does Gust do?"
+    },
+    "potentialAnswers": [
+      {
+        "text": "Adds a freezing effect to Drow's attacks, slowing enemy movement. Lasts 1.5 seconds on Heroes, and 7 seconds on creeps.",
+        "isCorrect": false
+      },
+      {
+        "text": "Releases a wave that silences and knocks back enemy units. Knockback distance is relative to how close they are to you.",
+        "isCorrect": true
+      },
+      {
+        "text": "Adds bonus damage to the physical attack of allied, ranged Hero units based on a percentage of Drow's agility. Affects creeps for 30 seconds when cast.",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "chosenQuestion": {
+      "text": "What does Fissure do?"
+    },
+    "potentialAnswers": [
+      {
+        "text": "Slams the ground with a mighty totem, creating an impassable ridge of stone while stunning and damaging enemy units along its line.",
+        "isCorrect": true
+      },
+      {
+        "text": "Empowers Earthshaker's totem, causing it to deal extra damage on the next attack. Upgradable by Aghanim's Scepter.",
+        "isCorrect": false
+      },
+      {
+        "text": "Causes the earth to shake underfoot, adding additional damage and stuns to nearby enemy units when Earthshaker casts his abilities.",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "chosenQuestion": {
       "text": "What is my name?"
     },
     "potentialAnswers": [
       {
-        "text": "123",
-        "isCorrect": false
-      },
-      {
-        "text": "456",
+        "text": "Sumia",
         "isCorrect": true
       },
       {
-        "text": "789",
+        "text": "Bob",
+        "isCorrect": false
+      },
+      {
+        "text": "Jenny",
         "isCorrect": false
       }
     ]
@@ -24,15 +81,15 @@
     },
     "potentialAnswers": [
       {
-        "text": "a",
-        "isCorrect": false
-      },
-      {
-        "text": "b",
+        "text": "16",
         "isCorrect": true
       },
       {
-        "text": "c",
+        "text": "22",
+        "isCorrect": false
+      },
+      {
+        "text": "97",
         "isCorrect": false
       }
     ]

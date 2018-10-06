@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import FlashCardContainer from "./FlashCardContainer";
 import quizQuestionGenerator from "../util/quizQuestionGenerator";
+import FinalScore from "./FinalScore";
 
 export default class QuizContainer extends React.Component {
   constructor(props) {
@@ -11,7 +12,7 @@ export default class QuizContainer extends React.Component {
       currentQuestionIndex: 0,
       points: 0
     };
-    this.nextQuestion = this.nextQuestion.bind(this);
+    this.onNextQuestionClick = this.onNextQuestionClick.bind(this);
     this.checkAnswer = this.checkAnswer.bind(this);
   }
 
@@ -34,26 +35,38 @@ export default class QuizContainer extends React.Component {
     }));
   }
 
-  nextQuestion() {
+  onNextQuestionClick() {
     this.setState(state => ({
       currentQuestionIndex: state.currentQuestionIndex + 1
     }));
   }
 
   render() {
+    const questionCount = this.state.questions.length;
     return (
       <Wrapper>
-        {this.state.questions.length > 0 && (
-          <FlashCardContainer
-            checkAnswer={this.checkAnswer}
-            chosenQuestion={
-              this.state.questions[this.state.currentQuestionIndex]
-                .chosenQuestion
-            }
-            potentialAnswers={
-              this.state.questions[this.state.currentQuestionIndex]
-                .potentialAnswers
-            }
+        {questionCount > 0 &&
+          this.state.currentQuestionIndex < questionCount && (
+            <React.Fragment>
+              <h2>{`${this.state.points}/${this.state.questions.length}`}</h2>
+              <FlashCardContainer
+                checkAnswer={this.checkAnswer}
+                onNextQuestionClick={this.onNextQuestionClick}
+                chosenQuestion={
+                  this.state.questions[this.state.currentQuestionIndex]
+                    .chosenQuestion
+                }
+                potentialAnswers={
+                  this.state.questions[this.state.currentQuestionIndex]
+                    .potentialAnswers
+                }
+              />
+            </React.Fragment>
+          )}
+        {this.state.currentQuestionIndex === questionCount && (
+          <FinalScore
+            points={this.state.points}
+            questionCount={questionCount}
           />
         )}
       </Wrapper>
