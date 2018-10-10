@@ -16,3 +16,7 @@ input [type="radio"]:checked + span {
   border: 1px solid green;
   content: "";
 }
+div {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
