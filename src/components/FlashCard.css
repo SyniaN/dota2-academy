@@ -2,11 +2,11 @@
 }
 
 .correct {
-  background-color: green;
+  color: lightgreen;
 }
 
 .incorrect {
-  background-color: red;
+  color: red;
 }
 
 input [type="radio"]:checked + span {
@@ -18,5 +18,5 @@ input [type="radio"]:checked + span {
 }
 div {
   margin-bottom: 15px;
-  font-size: 20px;
+  font-size: 25px;
 }
