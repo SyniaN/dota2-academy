@@ -6,7 +6,7 @@ export default class FlashCardContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedAnswerIndex: 0,
+      selectedAnswerIndex: -1,
       showAnswer: false
     };
     this.onAnswerSelect = this.onAnswerSelect.bind(this);
@@ -24,7 +24,7 @@ export default class FlashCardContainer extends React.Component {
   }
 
   onNextQuestionClick() {
-    this.setState({ showAnswer: false });
+    this.setState({ showAnswer: false, selectedAnswerIndex: -1 });
     this.props.onNextQuestionClick();
   }
 

@@ -1,11 +1,18 @@
 .title {
 }
 
-input [type="radio"]:checked + span
- {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border: 1px solid green;
-    content: "";
-  }
+.correct {
+  background-color: green;
+}
+
+.incorrect {
+  background-color: red;
+}
+
+input [type="radio"]:checked + span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid green;
+  content: "";
+}

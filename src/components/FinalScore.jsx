@@ -4,12 +4,14 @@ import styled from "styled-components";
 export default class FinalScore extends React.Component {
   render() {
     return (
-      <div>
+      <Wrapper>
         <h1>Finished</h1>
         <h3>
           You scored {this.props.points} out of {this.props.questionCount}
         </h3>
-      </div>
+      </Wrapper>
     );
   }
 }
+
+const Wrapper = styled.div``;

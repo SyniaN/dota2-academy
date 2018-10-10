@@ -8,8 +8,21 @@ export default class FlashCard extends React.Component {
         <h1 className="title">{this.props.question.text}</h1>
 
         {this.props.potentialAnswers.map((answer, index) => {
+          let className = "";
+
+          if (answer.isCorrect) {
+            className = "correct";
+          }
+
+          if (
+            this.props.selectedAnswerIndex === index &&
+            answer.isCorrect === false
+          ) {
+            className = "incorrect";
+          }
+
           return (
-            <div>
+            <div className={className}>
               <input
                 onClick={() => {
                   this.props.onAnswerSelect(index);
