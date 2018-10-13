@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100px;
+  height: 60px;
   background-color: #1b1d1d;
   border-top: solid #272a2a 3px;
 `;

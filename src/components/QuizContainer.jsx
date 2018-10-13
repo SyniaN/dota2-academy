@@ -74,4 +74,9 @@ export default class QuizContainer extends React.Component {
   }
 }
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  background-color: rgba(20, 20, 20, 0.5);
+  padding: 24px 48px;
+  border-radius: 10px;
+  min-height: 450px;
+`;

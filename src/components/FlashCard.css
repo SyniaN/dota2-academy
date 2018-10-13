@@ -1,22 +1,19 @@
-.title {
-}
-
 .correct {
-  background-color: green;
+  color: green;
 }
 
 .incorrect {
-  background-color: red;
+  color: red;
 }
 
-input [type="radio"]:checked + span {
+.flash-card input [type="radio"]:checked + span {
   display: block;
   width: 100%;
   height: 100%;
   border: 1px solid green;
   content: "";
 }
-div {
+.flash-card div {
   margin-bottom: 15px;
   font-size: 20px;
 }

@@ -4,7 +4,7 @@ import "./FlashCard.css";
 export default class FlashCard extends React.Component {
   render() {
     return (
-      <div>
+      <div className="flash-card">
         <h1 className="title">{this.props.question.text}</h1>
 
         {this.props.potentialAnswers.map((answer, index) => {
