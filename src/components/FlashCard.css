@@ -1,5 +1,5 @@
 .correct {
-  color: green;
+  color: lightgreen;
 }
 
 .incorrect {
@@ -15,5 +15,5 @@
 }
 .flash-card div {
   margin-bottom: 15px;
-  font-size: 20px;
+  font-size: 25px;
 }
